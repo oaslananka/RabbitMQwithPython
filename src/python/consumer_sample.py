@@ -7,10 +7,8 @@ port = 5672
 virtual_host = "/"
 queue_name = "hello"
 
-
 def callback(ch, method, properties, body):
     print(f" [x] Received {body}")
-
 
 # Connect to RabbitMQ server
 credentials = pika.PlainCredentials(user_name, password)
