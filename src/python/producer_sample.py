@@ -21,10 +21,7 @@ channel.queue_declare(queue=queue_name)
 
 
 # Send message
-channel.basic_publish(exchange='',
-					  routing_key=queue_name,
-					  body='Hello RabbitMQ!')
-
+channel.basic_publish(exchange='', routing_key=queue_name, body='Hello RabbitMQ!')
 
 
 print("Message sent: 'Hello RabbitMQ!'")
